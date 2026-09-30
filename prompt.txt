@@ -1,0 +1,11 @@
+Build a complete, playable 2D browser game in JavaScript using Phaser and Phaser Matter Physics. The game should have balls affected by gravity and moving, rotating polygon obstacles. Use actual physics bodies for the obstacles and balls—not just visual rotation—so collisions respond to the obstacles’ movement. Give the balls high restitution for lively rebounds, low friction, and stable collisions. Include walls, a way to launch or spawn balls, a restart button, and clear instructions. Provide all files and explain how to run the game locally. Keep the code organized and comment the physics settings I may want to tune.
+
+Here are the specifics:
+- Shapes can be circles and polygons with equal sides - from 3 to 8 sides
+- a ball is launched by holding the mouse button to designate the coordinates of the ball, moving the mouse away from that location to designate direction and speen, and releasing the mouse button to "slingshot" the ball.
+- The bottom of the game is slanted towards the middle of the screen.  There is a space in the middle for the ball to roll through and then it is lost
+- The physics consists of gravity and realistic bounce angles off the wall, ceiling, and bottom of the game as well as on the shapes.
+- Shapes start out with a number shown in their center.  This number decreases by 1 every time a ball bounces off it.  When the number reaches zero, the shape disappears.
+- The level is won when all shapes are cleared.  It is lost when you use your last ball and there are still shapes on the screen.
+- You start on an easy level with a few shapes, none of them rotating, and small hit numbers on each shape.
+- levels progress in difficulty with more shapes and higher hit numbers
